@@ -49,10 +49,15 @@ permalink: /questions/css-questions/index.html
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
 * What are the different ways to visually hide content (and make it available only for screen readers)?
-* Have you ever used a grid system, and if so, what do you prefer?
+- **Have you ever used a grid system, and if so, what do you prefer?**
+  Bootstrap is my favorate grid system, it has strong repsonsive features and very easy to learn.  //could add more here
+
 * Have you used or implemented media queries or mobile specific layouts/CSS?
 * Are you familiar with styling SVG?
-* Can you give an example of an `@media` property other than `screen`?
+
+- **Can you give an example of an `@media` property other than `screen`?**
+  @media queries support 4 different types; all, screen, print, and speech. It is quite common for a site to provide different styles for pages that would be printed; different color schemes (B&W) maybe required, hiding background images, as well as addressing hidden information that could be relevant when printed.
+  
 * What are some of the "gotchas" for writing efficient CSS?
 * What are the advantages/disadvantages of using CSS preprocessors?
   * Describe what you like and dislike about the CSS preprocessors you have used.
