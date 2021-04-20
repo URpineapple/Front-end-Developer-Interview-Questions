@@ -48,6 +48,29 @@ permalink: /questions/javascript-questions/index.html
   `var squaredArray = inputArray.map(x => x * x);`  
   Another typical example would be an anonymous function used by popular frameworks used as `IIFE` (Immediate Invoked Function Expression).  
   `(function() { })();`
+- **Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?**
+  **Definition**
+  The `map` method receives a function as a parameter. Then it applies it on each element and returns an entirely new array populated with the results of calling the provided function.
+
+  Like `map` , the `forEach()` method receives a function as an argument and executes it once for each array element. However, instead of returning a new array like map, it returns `undefined`.
+
+  **1.The returning value**
+  The first difference between `map()` and `forEach()` is the returning value. The `forEach()` method returns `undefined` and `map()` returns a new array with the transformed elements. Even if they do the same job, the returning value remains different.
+
+  **2. Ability to chain other methods**
+  The second difference between these array methods is the fact that `map()` is chainable. This means that you can attach `reduce()`, `sort()`, `filter()` and so on after performing a `map()` method on an array.
+
+  That's something you can't do with `forEach()` because, as you might guess, it returns `undefined`.
+
+  **3. Mutability**
+  In general, the word "mutate" means change, alternate, modify or transform. And in the JavaScript world it has the same meaning.
+  The `map()` method returns an entirely new array with transformed elements and the same amount of data. In the case of `forEach()`, even if it returns `undefined`, it will mutate the original array with the callback.
+
+  Therefore, we see clearly that `map()` relies on immutability and `forEach()` is a mutator method.
+
+
+
+- What's a typical use case for anonymous functions?
 - What's the difference between host objects and native objects?
 - Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 - Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
@@ -85,6 +108,7 @@ permalink: /questions/javascript-questions/index.html
 - How can you share code between files?
 - Why you might want to create static class members?
 - What is the difference between `while` and `do-while` loops in JavaScript?
+- What is a promise? Where and how would you use promise?
 
 ## Coding questions
 
